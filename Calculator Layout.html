@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basic HTML</title>
+</head>
+
+<body>
+	<link rel="stylesheet" href="LayoutStyle.css">
+	<header>
+		<h1 id="Titre">Projet Calculatrice</h1>
+	</header>
+	<div>
+		<fieldset>
+			<h1 style="text-align: center; color: white;">Calculatrice</h1>
+			<input id="InputBox" type="text">
+			<table>
+				<tr>
+					<td><button onclick="addValue('7')">7</button></td>
+					<td><button onclick="addValue('8')">8</button></td>
+					<td><button onclick="addValue('9')">9</button></td>
+					<td><button onclick="deleteValue()"></button></td>
+				</tr>
+				<tr>
+					<td><button onclick="addValue('4')">4</button></td>
+					<td><button onclick="addValue('5')">5</button></td>
+					<td><button onclick="addValue('6')">6</button></td>
+					<td><button onclick="addValue('/')">/</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="addValue('1')">1</button></td>
+					<td><button onclick="addValue('2')">2</button></td>
+					<td><button onclick="addValue('3')">3</button></td>
+					<td><button onclick="addValue('*')">*</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="addValue('0')">0</button></td>
+					<td><button onclick="addValue('(')">(</button></td>
+					<td><button onclick="addValue(')')">)</button></td>
+					<td><button onclick="addValue('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="clearInput()">C</button></td>
+					<td><button onclick="addValue('.')">.</button></td>
+					<td><button onclick="calculate()">=</button></td>
+					<td><button onclick="addValue('+')">+</button></td>
+				</tr>
+			</table>
+		</fieldset>
+	</div>
+	<script src="Calculatrice program.js"></script>
+</body>
+</html>
