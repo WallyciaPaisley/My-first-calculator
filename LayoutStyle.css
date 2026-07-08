@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(141, 211, 241);
+}
+fieldset{
+    block-size: auto;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-right: 400px;
+    display: center;
+    background-image: url("fondpasouf.png");
+    background-size: cover;
+    border-radius: 7px;
+    border-color: black;
+    border-width: 6px;
+    box-shadow: 2px gray;
+}
+#Titre{
+    text-align: center;
+    background-color: rgb(9, 12, 78);
+    color: white;
+    font-family: verdana;
+}
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: black;
+    border-width: 4px;
+    background-color: rgba(26, 70, 181, 0.8);
+}
+button:hover{
+    background-color: rgb(228, 207, 232);
+}
+button:active{
+    background-color: rgb(242, 109, 109);
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+#InputBox{
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: verdana;
+    text-align: center;
+    border-radius: 7px;
+    border-color: black;
+    border-width: 4px;
+}
