@@ -7,7 +7,7 @@ fieldset{
     margin-top: 50px;
     margin-right: 400px;
     display: center;
-    background-image: url("/image/fondpasouf.png");
+    background-image: url("image/fondpasouf.png");
     background-size: cover;
     border-radius: 7px;
     border-color: black;
