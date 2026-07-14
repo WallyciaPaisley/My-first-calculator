@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(45, 16, 119);
+    background-color: rgb(141, 211, 241);
 }
 fieldset{
     block-size: auto;
@@ -20,7 +20,7 @@ fieldset{
     color: white;
     font-family: verdana;
 }
-button{
+.cbutton{
     width: 100px;
     height: 50px;
     font-size: 20px;
@@ -29,10 +29,10 @@ button{
     border-width: 4px;
     background-color: rgba(26, 70, 181, 0.8);
 }
-button:hover{
+.cbutton:hover{
     background-color: rgb(228, 207, 232);
 }
-button:active{
+.cbutton:active{
     background-color: rgb(242, 109, 109);
 }
 table{
@@ -52,4 +52,7 @@ table{
     border-radius: 7px;
     border-color: black;
     border-width: 4px;
+}
+#LDmode{
+    float: inline-end;
 }

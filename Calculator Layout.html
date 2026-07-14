@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="LayoutStyleLight.css">
 	<header>
 		<h1 id="Titre">Projet Calculatrice</h1>
+		<button id="LDmode">L</button>
 	</header>
 	<div>
 		<fieldset>
@@ -18,34 +19,34 @@
 			<input id="InputBox" type="text">
 			<table>
 				<tr>
-					<td><button onclick="addValue('7')">7</button></td>
-					<td><button onclick="addValue('8')">8</button></td>
-					<td><button onclick="addValue('9')">9</button></td>
-					<td><button onclick="deleteValue()"></button></td>
+					<td><button class="cbutton" onclick="addValue('7')">7</button></td>
+					<td><button class="cbutton" onclick="addValue('8')">8</button></td>
+					<td><button class="cbutton" onclick="addValue('9')">9</button></td>
+					<td><button class="cbutton" onclick="deleteValue()"></button></td>
 				</tr>
 				<tr>
-					<td><button onclick="addValue('4')">4</button></td>
-					<td><button onclick="addValue('5')">5</button></td>
-					<td><button onclick="addValue('6')">6</button></td>
-					<td><button onclick="addValue('/')">/</button></td>
+					<td><button class="cbutton" onclick="addValue('4')">4</button></td>
+					<td><button class="cbutton" onclick="addValue('5')">5</button></td>
+					<td><button class="cbutton" onclick="addValue('6')">6</button></td>
+					<td><button class="cbutton" onclick="addValue('/')">/</button></td>
 				</tr>
 				<tr>
-					<td><button onclick="addValue('1')">1</button></td>
-					<td><button onclick="addValue('2')">2</button></td>
-					<td><button onclick="addValue('3')">3</button></td>
-					<td><button onclick="addValue('*')">*</button></td>
+					<td><button class="cbutton" onclick="addValue('1')">1</button></td>
+					<td><button class="cbutton" onclick="addValue('2')">2</button></td>
+					<td><button class="cbutton" onclick="addValue('3')">3</button></td>
+					<td><button class="cbutton" onclick="addValue('*')">*</button></td>
 				</tr>
 				<tr>
-					<td><button onclick="addValue('0')">0</button></td>
-					<td><button onclick="addValue('(')">(</button></td>
-					<td><button onclick="addValue(')')">)</button></td>
-					<td><button onclick="addValue('-')">-</button></td>
+					<td><button class="cbutton" onclick="addValue('0')">0</button></td>
+					<td><button class="cbutton" onclick="addValue('(')">(</button></td>
+					<td><button class="cbutton" onclick="addValue(')')">)</button></td>
+					<td><button class="cbutton" onclick="addValue('-')">-</button></td>
 				</tr>
 				<tr>
-					<td><button onclick="clearInput()">C</button></td>
-					<td><button onclick="addValue('.')">.</button></td>
-					<td><button onclick="calculate()">=</button></td>
-					<td><button onclick="addValue('+')">+</button></td>
+					<td><button class="cbutton" onclick="clearInput()">C</button></td>
+					<td><button class="cbutton" onclick="addValue('.')">.</button></td>
+					<td><button class="cbutton" onclick="calculate()">=</button></td>
+					<td><button class="cbutton" onclick="addValue('+')">+</button></td>
 				</tr>
 			</table>
 		</fieldset>
