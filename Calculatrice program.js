@@ -73,3 +73,12 @@ document.addEventListener("keydown", function(event){
         deleteValue();
     }
 })
+function LDMode(){
+    if (document.getElementsByTagName("link")[0].getAttribute("href") === "LayoutStyleLight.css"){
+        document.getElementsByTagName("link")[0].setAttribute("href", "LayoutStyleDark.css");
+        document.getElementById("LDmode").textContent = "D";
+    } else {
+        document.getElementsByTagName("link")[0].setAttribute("href", "LayoutStyleLight.css");
+        document.getElementById("LDmode").textContent = "L"
+    }
+};
