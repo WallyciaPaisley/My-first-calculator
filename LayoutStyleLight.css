@@ -56,3 +56,6 @@ table{
 #LDMode{
     float: inline-end;
 }
+#Time{
+    font-size: 20px; 
+}

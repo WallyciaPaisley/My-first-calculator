@@ -82,3 +82,20 @@ function LDMode(){
         document.getElementById("LDMode").textContent = "L"
     }
 };
+async function fetchTimeZone(){
+    try{
+        const response = await fetch("https://timeapi.io/api/v1/time/current/zone?timezone=Europe%2FParis");
+        if(response.ok){
+            const data = await response.json()
+            console.log(data.time);
+            document.getElementById("Time").textContent = data.time.slice(0,8)
+        }
+        else{
+            throw new Error("What?")
+        }
+    }
+    catch(error){
+        console.error(error);
+    }
+}
+fetchTimeZone();
