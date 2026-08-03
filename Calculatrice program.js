@@ -7,8 +7,15 @@ function deleteValue(){
     input.value = input.value.slice(0, -1);
 }
 function calculate(){
-        const calcul = document.getElementById("InputBox")
-        document.getElementById("InputBox").value = eval(calcul.value);
+    const calcul = document.getElementById("InputBox");
+    const expression = calcul.value.trim();
+
+    if (expression.includes("cos(")) {
+        const value = expression.replace("cos(", "").replace(")", "");
+        calcul.value = Math.cos(parseFloat(value)).toString();
+    } else {
+        calcul.value = eval(expression);
+    }
 }
 const clearInput = () => {document.getElementById("InputBox").value = ""};
 document.addEventListener("keydown", function(event){
