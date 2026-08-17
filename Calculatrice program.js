@@ -89,20 +89,16 @@ function LDMode(){
         document.getElementById("LDMode").textContent = "L"
     }
 };
-async function fetchTimeZone(){
-    try{
-        const response = await fetch("https://timeapi.io/api/v1/time/current/zone?timezone=Europe%2FParis");
-        if(response.ok){
-            const data = await response.json()
-            console.log(data.time);
-            document.getElementById("Time").textContent = data.time.slice(0,8)
-        }
-        else{
-            throw new Error("What?")
-        }
-    }
-    catch(error){
-        console.error(error);
-    }
+function date(){
+const D = new Date();
+const newD = new Intl.DateTimeFormat("fr-FR", {
+    timeZone: "Europe/Paris",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+}).format(D);
+    document.getElementById("Time").textContent = newD;
 }
-fetchTimeZone();
+date();
+setInterval(date, 1000)
