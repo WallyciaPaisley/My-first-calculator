@@ -13,8 +13,13 @@
 		<h1 id="Titre">Projet Calculatrice</h1>
 		<button id="LDMode" onclick="LDMode()">L</button>
 	</header>
+		<button id="menuButton" onclick="slidingMenu()">Menu</button>
+	<div id="menu" class="hiddenMenu">
+		<p id="resizeText"><em>Resize:</em></p>
+		<input id="resize" type="range">
+	</div>
 	<div>
-		<fieldset>
+		<fieldset class="calculatorPanel">
 			<h1 style="text-align: center; color: white;">Calculatrice</h1>
 			<input id="InputBox" type="text" readonly>
 			<table>

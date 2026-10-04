@@ -121,3 +121,14 @@ const newD = new Intl.DateTimeFormat("fr-FR", {
 }
 date();
 setInterval(date, 1000)
+
+//Sliding menu function
+function slidingMenu(){
+    const menu = document.getElementById("menu"); 
+    menu.classList.toggle("openMenu");
+};
+
+//Resizable layout function
+function resize(){
+
+};
