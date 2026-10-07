@@ -124,8 +124,14 @@ setInterval(date, 1000)
 
 //Sliding menu function
 function slidingMenu(){
-    const menu = document.getElementById("menu"); 
+    const menu = document.getElementById("menu");
     menu.classList.toggle("openMenu");
+    if(menu.classList.contains("openMenu")){
+    document.getElementById("menuButton").innerText = ">";
+    }
+    else{
+    document.getElementById("menuButton").innerText = "Menu";
+    }
 };
 
 //Resizable layout function

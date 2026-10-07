@@ -54,14 +54,17 @@ table{
     border-width: 4px;
 }
 #LDMode{
-    float: inline-end;
+    position: fixed;
+    right: 7px;
+    top:12%;
 }
 #Time{
     font-size: 30px; 
     font-family: fantasy;
 }
 .hiddenMenu{
-    display: none;
+    display: inline-block;
+    transform: translateX(-50vh);
 }
 .openMenu{
     display: inline-block;
@@ -70,14 +73,16 @@ table{
     border-color: black;
     border-radius: 10%;
     position: fixed;
-    top: 55px;
+    top: 10%;
     left: 0;
     width: 260px;
     height: 50vh;
+    transition: 0.5s;
     transform: translateX(20px);
 }
 #menuButton{
     position: fixed;
+    top: 12%;
     left: 0;
     display: inline-block;
     block-size: 20px;
