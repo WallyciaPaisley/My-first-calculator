@@ -136,5 +136,15 @@ function slidingMenu(){
 
 //Resizable layout function
 function resize(){
-
+    const panel = document.getElementById("calculatorPanel");
+    const range = document.getElementById("resize");
+    const currentRange = range.value * 10
+    panel.style.width = `${(currentRange + 350).toString()}px`;
+    panel.style.height = `${(currentRange + 400).toString()}px`;
 };
+function resetSize(){
+    document.getElementById("resize").value = "50";
+    const panel = document.getElementById("calculatorPanel");
+    panel.style.width = "min(400px, calc(100vw - 2rem))";
+    panel.style.height = "min(450px, calc(100vh - 2rem))";
+}

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Basic HTML</title>
+	<title>Projet Calculatrice</title>
 </head>
 
 <body>
@@ -16,51 +16,42 @@
 		<button id="menuButton" onclick="slidingMenu()">Menu</button>
 	<div id="menu" class="hiddenMenu">
 		<p id="resizeText"><em>Resize:</em></p>
-		<input id="resize" type="range">
+		<input id="resize" type="range" value="50" oninput="resize()">
+		<br>
+		<button onclick="resetSize()">Reset</button>
 	</div>
 	<div>
-		<fieldset class="calculatorPanel">
-			<h1 style="text-align: center; color: white;">Calculatrice</h1>
-			<input id="InputBox" type="text" readonly>
-			<table>
-				<tr>
-					<td><button class="cbutton" onclick="addValue('7')">7</button></td>
-					<td><button class="cbutton" onclick="addValue('8')">8</button></td>
-					<td><button class="cbutton" onclick="addValue('9')">9</button></td>
-					<td><button class="cbutton" onclick="deleteValue()"></button></td>
-				</tr>
-				<tr>
-					<td><button class="cbutton" onclick="addValue('4')">4</button></td>
-					<td><button class="cbutton" onclick="addValue('5')">5</button></td>
-					<td><button class="cbutton" onclick="addValue('6')">6</button></td>
-					<td><button class="cbutton" onclick="addValue('/')">/</button></td>
-				</tr>
-				<tr>
-					<td><button class="cbutton" onclick="addValue('1')">1</button></td>
-					<td><button class="cbutton" onclick="addValue('2')">2</button></td>
-					<td><button class="cbutton" onclick="addValue('3')">3</button></td>
-					<td><button class="cbutton" onclick="addValue('*')">*</button></td>
-				</tr>
-				<tr>
-					<td><button class="cbutton" onclick="addValue('0')">0</button></td>
-					<td><button class="cbutton" onclick="addValue('(')">(</button></td>
-					<td><button class="cbutton" onclick="addValue(')')">)</button></td>
-					<td><button class="cbutton" onclick="addValue('-')">-</button></td>
-				</tr>
-				<tr>
-					<td><button class="cbutton" onclick="clearInput()">C</button></td>
-					<td><button class="cbutton" onclick="addValue('.')">.</button></td>
-					<td><button class="cbutton" onclick="calculate()">=</button></td>
-					<td><button class="cbutton" onclick="addValue('+')">+</button></td>
-				</tr>
-				<tr>
-					<td><button class="cbutton" onclick="addValue('cos(')">cos</button></td>
-					<td><button class="cbutton" onclick="addValue('sin(')">sin</button></td>
-					<td><button class="cbutton" onclick="addValue('tan(')">tan</button></td>
-				</tr>
-			</table>
-		</fieldset>
+		<div id="calculatorPanel">
+			<div class="calculatorTop">
+				<h1 style="color: white;">Calculatrice</h1>
+				<input id="InputBox" type="text" readonly>
+			</div>
+					<div><button class="cbutton" onclick="addValue('7')">7</button></div>
+					<div><button class="cbutton" onclick="addValue('8')">8</button></div>
+					<div><button class="cbutton" onclick="addValue('9')">9</button></div>
+					<div><button class="cbutton" onclick="deleteValue()"></button></div>
+					<div><button class="cbutton" onclick="addValue('4')">4</button></div>
+					<div><button class="cbutton" onclick="addValue('5')">5</button></div>
+					<div><button class="cbutton" onclick="addValue('6')">6</button></div>
+					<div><button class="cbutton" onclick="addValue('/')">/</button></div>
+					<div><button class="cbutton" onclick="addValue('1')">1</button></div>
+					<div><button class="cbutton" onclick="addValue('2')">2</button></div>
+					<div><button class="cbutton" onclick="addValue('3')">3</button></div>
+					<div><button class="cbutton" onclick="addValue('*')">*</button></div>
+					<div><button class="cbutton" onclick="addValue('0')">0</button></div>
+					<div><button class="cbutton" onclick="addValue('(')">(</button></div>
+					<div><button class="cbutton" onclick="addValue(')')">)</button></div>
+					<div><button class="cbutton" onclick="addValue('-')">-</button></div>
+					<div><button class="cbutton" onclick="clearInput()">C</button></div>
+					<div><button class="cbutton" onclick="addValue('.')">.</button></div>
+					<div><button class="cbutton" onclick="calculate()">=</button></div>
+					<div><button class="cbutton" onclick="addValue('+')">+</button></div>
+					<div><button class="cbutton" onclick="addValue('cos(')">cos</button></div>
+					<div><button class="cbutton" onclick="addValue('sin(')">sin</button></div>
+					<div><button class="cbutton" onclick="addValue('tan(')">tan</button></div>
+		</div>
 	</div>
+	<br>
 	<footer>
 		<div id="Time">
 		</div>
